@@ -36,7 +36,8 @@ body, html, #root {
   transform: scale(1.05)
 }
 
-.movie-card:active {
+/* active must hold not just click */
+.movie-card:active{
   transform: rotateY(180deg) scale(1.05);
 }
 

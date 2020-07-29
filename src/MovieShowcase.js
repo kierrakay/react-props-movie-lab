@@ -6,6 +6,8 @@ export default class MovieShowcase extends Component {
 
   generateMovieCards = () => {
     // map over your movieData array and return an array of the correct JSX
+    //props are here and passed down from this parent component to the child components. this parent component gets props from data.js
+    //this.props.blah blah starts here
     return movieData.map((movie, index) => <MovieCard
       key={index}
       title={movie.title}
@@ -24,3 +26,5 @@ export default class MovieShowcase extends Component {
     )
   }
 }
+
+//movieCard is a component  which is a child of the movieshow case component .... moviecard is imported
